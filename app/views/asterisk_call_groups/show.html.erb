@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Group:</strong>
+  <%= @asterisk_call_group.group %>
+</p>
+
+<p>
+  <strong>Members:</strong>
+  <%= @asterisk_call_group.members %>
+</p>
+
+<%= link_to 'Edit', edit_asterisk_call_group_path(@asterisk_call_group) %> |
+<%= link_to 'Back', asterisk_call_groups_path %>

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :asterisk_call_groups
+
   resources :asterisk_paging_groups
 
   resources :asterisk_devices

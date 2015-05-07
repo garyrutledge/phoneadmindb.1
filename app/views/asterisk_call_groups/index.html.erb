@@ -1,0 +1,27 @@
+<h1>Listing asterisk_call_groups</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Group</th>
+      <th>Members</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @asterisk_call_groups.each do |asterisk_call_group| %>
+      <tr>
+        <td><%= asterisk_call_group.group %></td>
+        <td><%= asterisk_call_group.members %></td>
+        <td><%= link_to 'Show', asterisk_call_group %></td>
+        <td><%= link_to 'Edit', edit_asterisk_call_group_path(asterisk_call_group) %></td>
+        <td><%= link_to 'Destroy', asterisk_call_group, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Asterisk call group', new_asterisk_call_group_path %>
