@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  paging_extension: MyString
+  name: MyString
+  members: MyString
+
+two:
+  paging_extension: MyString
+  name: MyString
+  members: MyString
