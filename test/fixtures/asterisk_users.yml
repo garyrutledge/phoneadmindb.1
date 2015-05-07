@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  prefix: MyString
+  extension: MyString
+  did: MyString
+  display_name: MyString
+  password: MyString
+  voicemail_enabled: MyString
+  voicemail_password: MyString
+  email: MyString
+  faxenabled: MyString
+  asterisk_call_group_id: 
+
+two:
+  prefix: MyString
+  extension: MyString
+  did: MyString
+  display_name: MyString
+  password: MyString
+  voicemail_enabled: MyString
+  voicemail_password: MyString
+  email: MyString
+  faxenabled: MyString
+  asterisk_call_group_id: 
