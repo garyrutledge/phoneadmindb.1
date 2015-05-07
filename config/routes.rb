@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'landings/index'
+
   resources :asterisk_call_groups
 
   resources :asterisk_paging_groups
