@@ -1,4 +1,5 @@
 ActiveAdmin.register AsteriskPagingGroup do
+  permit_params :paging_extension, :name, :members
 
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
