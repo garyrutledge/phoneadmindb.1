@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Prefix:</strong>
+  <%= @asterisk_voicemail_box.prefix %>
+</p>
+
+<p>
+  <strong>Extension:</strong>
+  <%= @asterisk_voicemail_box.extension %>
+</p>
+
+<p>
+  <strong>Did:</strong>
+  <%= @asterisk_voicemail_box.did %>
+</p>
+
+<p>
+  <strong>Display name:</strong>
+  <%= @asterisk_voicemail_box.display_name %>
+</p>
+
+<p>
+  <strong>Asterisk user:</strong>
+  <%= @asterisk_voicemail_box.asterisk_user %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @asterisk_voicemail_box.password %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @asterisk_voicemail_box.email %>
+</p>
+
+<%= link_to 'Edit', edit_asterisk_voicemail_box_path(@asterisk_voicemail_box) %> |
+<%= link_to 'Back', asterisk_voicemail_boxes_path %>

@@ -1,0 +1,37 @@
+<h1>Listing asterisk_voicemail_boxes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Prefix</th>
+      <th>Extension</th>
+      <th>Did</th>
+      <th>Display name</th>
+      <th>Asterisk user</th>
+      <th>Password</th>
+      <th>Email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @asterisk_voicemail_boxes.each do |asterisk_voicemail_box| %>
+      <tr>
+        <td><%= asterisk_voicemail_box.prefix %></td>
+        <td><%= asterisk_voicemail_box.extension %></td>
+        <td><%= asterisk_voicemail_box.did %></td>
+        <td><%= asterisk_voicemail_box.display_name %></td>
+        <td><%= asterisk_voicemail_box.asterisk_user %></td>
+        <td><%= asterisk_voicemail_box.password %></td>
+        <td><%= asterisk_voicemail_box.email %></td>
+        <td><%= link_to 'Show', asterisk_voicemail_box %></td>
+        <td><%= link_to 'Edit', edit_asterisk_voicemail_box_path(asterisk_voicemail_box) %></td>
+        <td><%= link_to 'Destroy', asterisk_voicemail_box, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Asterisk voicemail box', new_asterisk_voicemail_box_path %>
