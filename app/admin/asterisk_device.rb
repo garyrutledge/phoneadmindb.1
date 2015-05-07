@@ -1,4 +1,5 @@
 ActiveAdmin.register AsteriskDevice do
+  permit_params :description, :location, :secret, :admin_password, :mac_address, :account_code, :associated_user
 
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
