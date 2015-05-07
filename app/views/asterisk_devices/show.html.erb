@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @asterisk_device.description %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @asterisk_device.location %>
+</p>
+
+<p>
+  <strong>Secret:</strong>
+  <%= @asterisk_device.secret %>
+</p>
+
+<p>
+  <strong>Asterisk user:</strong>
+  <%= @asterisk_device.asterisk_user %>
+</p>
+
+<p>
+  <strong>Admin password:</strong>
+  <%= @asterisk_device.admin_password %>
+</p>
+
+<p>
+  <strong>Mac address:</strong>
+  <%= @asterisk_device.mac_address %>
+</p>
+
+<p>
+  <strong>Account code:</strong>
+  <%= @asterisk_device.account_code %>
+</p>
+
+<p>
+  <strong>Associated user:</strong>
+  <%= @asterisk_device.associated_user %>
+</p>
+
+<%= link_to 'Edit', edit_asterisk_device_path(@asterisk_device) %> |
+<%= link_to 'Back', asterisk_devices_path %>

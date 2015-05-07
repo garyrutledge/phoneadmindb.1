@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :asterisk_devices
+
   resources :asterisk_users
 
   resources :asterisk_voicemail_boxes

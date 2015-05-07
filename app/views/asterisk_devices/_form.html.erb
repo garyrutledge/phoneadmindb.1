@@ -1,0 +1,18 @@
+<%= simple_form_for(@asterisk_device) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :description %>
+    <%= f.input :location %>
+    <%= f.input :secret %>
+    <%= f.association :asterisk_user %>
+    <%= f.input :admin_password %>
+    <%= f.input :mac_address %>
+    <%= f.input :account_code %>
+    <%= f.input :associated_user %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

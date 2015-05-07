@@ -1,0 +1,2 @@
+module AsteriskDevicesHelper
+end
