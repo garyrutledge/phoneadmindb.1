@@ -1,4 +1,5 @@
 ActiveAdmin.register AsteriskUser do
+  permit_params :prefix, :extension, :did, :display_name, :password, :voicemail_enabled, :voicemail_password, :email, :faxenabled
 
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
