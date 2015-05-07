@@ -1,0 +1,43 @@
+<h1>Listing asterisk_users</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Prefix</th>
+      <th>Extension</th>
+      <th>Did</th>
+      <th>Display name</th>
+      <th>Password</th>
+      <th>Voicemail enabled</th>
+      <th>Voicemail password</th>
+      <th>Email</th>
+      <th>Faxenabled</th>
+      <th>Asterisk call group</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @asterisk_users.each do |asterisk_user| %>
+      <tr>
+        <td><%= asterisk_user.prefix %></td>
+        <td><%= asterisk_user.extension %></td>
+        <td><%= asterisk_user.did %></td>
+        <td><%= asterisk_user.display_name %></td>
+        <td><%= asterisk_user.password %></td>
+        <td><%= asterisk_user.voicemail_enabled %></td>
+        <td><%= asterisk_user.voicemail_password %></td>
+        <td><%= asterisk_user.email %></td>
+        <td><%= asterisk_user.faxenabled %></td>
+        <td><%= asterisk_user.asterisk_call_group %></td>
+        <td><%= link_to 'Show', asterisk_user %></td>
+        <td><%= link_to 'Edit', edit_asterisk_user_path(asterisk_user) %></td>
+        <td><%= link_to 'Destroy', asterisk_user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Asterisk user', new_asterisk_user_path %>

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :asterisk_users
+
   resources :asterisk_voicemail_boxes
 
   devise_for :admin_users, ActiveAdmin::Devise.config
