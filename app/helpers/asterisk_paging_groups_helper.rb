@@ -1,0 +1,2 @@
+module AsteriskPagingGroupsHelper
+end

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Paging extension:</strong>
+  <%= @asterisk_paging_group.paging_extension %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @asterisk_paging_group.name %>
+</p>
+
+<p>
+  <strong>Members:</strong>
+  <%= @asterisk_paging_group.members %>
+</p>
+
+<%= link_to 'Edit', edit_asterisk_paging_group_path(@asterisk_paging_group) %> |
+<%= link_to 'Back', asterisk_paging_groups_path %>
